@@ -1,0 +1,22 @@
+name: test selenium python
+on:
+  push:
+    branches:
+      -main
+jobs:
+  build:
+  
+    runs-on: ubuntu-latest
+    
+    name: myfirstjobtest
+    steps: 
+      - uses: actions/checkout@v4
+      - name: Run Python test with Pytest Configuration ${{ matrix.python-version}}
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Display Python version
+        run: python -c "import sys; print(sys.version)"
+          
+    
+    
