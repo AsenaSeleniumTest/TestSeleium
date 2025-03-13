@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from SeleniumTest.Pages.HomePage import HomePage
+from Pages.HomePage import HomePage
 
 class MyAccountPage(HomePage):
     new_customer = (By.XPATH, "//h2[contains(text(),'Continue')]")
