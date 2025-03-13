@@ -11,7 +11,7 @@ jobs:
     name: myfirstjobtest
     steps: 
       - uses: actions/checkout@v4
-      - name: Run Python test with Pytest Configuration ${{ matrix.python-version}}
+      - name: Run Python test with Pytest Configuration 
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
