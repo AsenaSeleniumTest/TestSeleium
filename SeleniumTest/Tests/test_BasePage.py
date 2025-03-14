@@ -1,5 +1,5 @@
 from selenium.common.exceptions import ElementNotInteractableException
-from SeleniumTest.Pages.HomePage import HomePage as hp
+from Pages.HomePage import HomePage as hp
 import pytest
 import unittest
 

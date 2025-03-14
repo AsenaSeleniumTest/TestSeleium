@@ -1,9 +1,9 @@
 import pytest
 import unittest
 from selenium.webdriver.common.by import By
-from SeleniumTest.Configurations.TestData import TestData
-from SeleniumTest.Pages.HomePage import HomePage
-from SeleniumTest.Pages.MyAccountPage import MyAccountPage
+from Configurations.TestData import TestData
+from Pages.HomePage import HomePage
+from Pages.MyAccountPage import MyAccountPage
 
 
 class Test_my_account:
