@@ -7,9 +7,7 @@ jobs:
   test:
   
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: /TestSelenium
+    
     name: myfirstjobtest
     steps: 
       - uses: actions/checkout@v4
