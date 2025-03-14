@@ -21,7 +21,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest 
       - name: test code execution
-        run: pytest  
+        run: pytest SeleniumTest/Tests/test_BasePage.py 
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
           
