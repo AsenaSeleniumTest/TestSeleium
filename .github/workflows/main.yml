@@ -22,7 +22,7 @@ jobs:
           pip install -r requirements.txt
       - name: Ensure the Pages folder has the __init__.py file
         run: |
-          touch SeleniumTest/Pages/__init__.py
+          python -c "open('SeleniumTest/Pages/__init__.py','a').close()" x
 
       - name: test code execution
         run: pytest SeleniumTest/Tests/test_BasePage.py 
