@@ -20,6 +20,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+      - name: Ensure the Pages folder has the __init__.py file
+        run: |
+          touch SeleniumTest/Pages/__init__.py
+
       - name: test code execution
         run: pytest SeleniumTest/Tests/test_BasePage.py 
       - name: Display Python version
