@@ -118,3 +118,26 @@ class MyAccountRegistration(MyAccountPage):
         """
         Click on the continue button """
         MyAccountPage.click_element(self,element = self.submit_continue_element)    
+
+    def register_account(self,gender,first_name,last_name,dob,email,company_name,street,suburb,postcode,city,state,country,telephone,fax,news_letter,password,confirm_password):
+        """
+        Register the account """
+        MyAccountPage.click_element(self, element=self.gender_element)
+        MyAccountPage.type_text(self, element=self.first_name_element, text=first_name)
+        MyAccountPage.type_text(self, element=self.last_name_element, text=last_name)
+        MyAccountPage.type_text(self, element=self.dob_element, text=dob)
+        MyAccountPage.type_text(self, element=self.email_element, text=email)
+        MyAccountPage.type_text(self, element=self.company_name_element, text=company_name)
+        MyAccountPage.type_text(self, element=self.street_element, text=street)
+        MyAccountPage.type_text(self, element=self.suburb_element, text=suburb)
+        MyAccountPage.type_text(self, element=self.postcode_element, text=postcode)
+        MyAccountPage.type_text(self, element=self.city_element, text=city)
+        MyAccountPage.type_text(self, element=self.state_element, text=state)
+        MyAccountPage.type_text(self, element=self.country_element, text=country)
+        MyAccountPage.type_text(self, element=self.telephone_element, text=telephone)
+        MyAccountPage.type_text(self, element=self.fax_element, text=fax)
+        MyAccountPage.click_element(self, element=self.news_letter_element)
+        MyAccountPage.type_text(self, element=self.password_element, text=password)
+        MyAccountPage.type_text(self, element=self.confirm_password_element, text=confirm_password)
+        MyAccountPage.click_element(self, element=self.submit_continue_element)
+            
