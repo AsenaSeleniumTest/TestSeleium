@@ -23,6 +23,7 @@ jobs:
       - name: Ensure the Pages folder has the __init__.py file
         run: |
           python -c "open('SeleniumTest/Pages/__init__.py','a').close()" 
+          python -c "open('SeleniumTest/Configurations/__init__.py','a').close()"
 
       - name: test code execution
         run: pytest SeleniumTest/Tests/test_BasePage.py 
