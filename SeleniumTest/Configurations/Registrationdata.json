@@ -1,0 +1,42 @@
+{
+    "UserData:":[
+        {
+            "Gender":"Male",
+            "FirstName":"Test",
+            "LastName":"User",
+            "DateOfBirth":"01/01/1990",
+            "Email":"testmail1@test.com",
+            "Company":"Test Company",
+            "Street":"Test Street",
+            "Suburb":"Test Suburb",
+            "Postcode":"1234",
+            "City":"Test City",
+            "State":"Test State",
+            "Country":"Mexico",
+            "Phone":"1234567890",
+            "Fax":"0987654321",
+            "Newsletter":"Yes",
+            "Password":"Test1234",
+            "ConfirmPassword":"Test1234"
+        },
+        {
+            "Gender":"Female",
+            "FirstName":"Test2",
+            "LastName":"User2",
+            "DateOfBirth":"01/01/1990",
+            "Email":"testmail2@test.com",
+            "Company":"Test Company",
+            "Street":"Test Street",
+            "Suburb":"Test Suburb",
+            "Postcode":"1234",
+            "City":"Test City",
+            "State":"Test State",
+            "Country":"Mexico",
+            "Phone":"1234567890",
+            "Fax":"0987654321",
+            "Newsletter":"No",
+            "Password":"Test1234",
+            "ConfirmPassword":"Test1234"
+        }       
+    ]
+}

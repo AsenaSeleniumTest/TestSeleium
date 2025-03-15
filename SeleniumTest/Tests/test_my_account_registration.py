@@ -20,7 +20,7 @@ class Test_My_Account_Registration:
         hp1.click_element(hp1.myaccount_link)
         my_cuenta= MyAccountPage(self.driver)
         my_cuenta.click_continue_to_registration()
-        my_cuenta_reg = MyAccountRegistration(s elf.driver)
+        my_cuenta_reg = MyAccountRegistration(self.driver)
         my_cuenta_reg.select_gender(gender)
         my_cuenta_reg.type_first_name(first_name)
         my_cuenta_reg.type_last_name(last_name) 
