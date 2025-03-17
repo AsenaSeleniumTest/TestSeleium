@@ -5,7 +5,7 @@ class TestData:
     myaccount_link = "http://automationpractice.com/index.php?controller=my-account"
     email = "bpb@online.com"
     password = "bpb"
-    data_file="SeleniumTest/Configurations/Registrationdata.json"
+    data_file="SeleniumTest/TestData/Registrationdata.json"
     def __init__(self):
         pass
 
@@ -24,6 +24,4 @@ class TestData:
         print(data)
 
 
-
-tdata = TestData()
-tdata.SeeData()              
+         
