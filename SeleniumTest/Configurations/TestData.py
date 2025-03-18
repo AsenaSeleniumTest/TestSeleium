@@ -1,13 +1,14 @@
 import json
 class TestData:
     """ This class contains the test data for the application """
-    home_url = "http://automationpractice.com/index.php"
-    myaccount_link = "http://automationpractice.com/index.php?controller=my-account"
-    email = "bpb@online.com"
-    password = "bpb"
-    data_file="SeleniumTest/TestData/Registrationdata.json"
+    
     def __init__(self):
-        pass
+        self.home_url = "http://automationpractice.com/index.php"
+        self.myaccount_link = "http://automationpractice.com/index.php?controller=my-account"
+        self.email = "bpb@online.com"
+        self.password = "bpb"
+        self.data_file="SeleniumTest/TestData/Registrationdata.json"
+        
 
     def read_data_registration(self, file_path):
         """ Read the data from the json file """
