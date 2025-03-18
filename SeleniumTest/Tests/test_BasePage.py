@@ -2,6 +2,8 @@ from selenium.common.exceptions import ElementNotInteractableException
 from Pages.HomePage import HomePage as hp
 import pytest
 import unittest
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 class Test_BasePage:
     """ Test the base page of the application """

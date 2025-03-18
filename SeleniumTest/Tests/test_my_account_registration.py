@@ -5,7 +5,8 @@ from Configurations.TestData import TestData
 from Pages.HomePage import HomePage
 from Pages.MyAccountPage import MyAccountPage
 from Pages.MyAccountRegistration import MyAccountRegistration
-
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 class Test_My_Account_Registration:
     """ This class contains the test cases for the my account registration page """
     driver = None

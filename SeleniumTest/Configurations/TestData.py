@@ -1,4 +1,5 @@
 import json
+import os
 class TestData:
     """ This class contains the test data for the application """
     
@@ -24,5 +25,8 @@ class TestData:
         data = self.read_data_registration(self.data_file)
         print(data)
 
+    def system_info(self):
+        """ Get the system information """
+        return os.environ   
 
-         
+
