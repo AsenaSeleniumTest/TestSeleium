@@ -39,5 +39,5 @@ class Test_My_Account_Registration:
         my_cuenta_reg.type_password(password)
         my_cuenta_reg.type_confirm_password(confirm_password)
         my_cuenta_reg.click_continue_submit()
-
+        TestData.SeeData()
         assert my_cuenta_reg.get_title() == TestData.my_account_title
