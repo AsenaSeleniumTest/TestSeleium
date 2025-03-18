@@ -30,7 +30,7 @@ class HomePage:
         try:
             self.wait.until(EC.visibility_of_element_located(element)).click()
         except ElementClickInterceptedException as ex:
-            print($"Element is not clickable : {ex.__str__()}")
+            print("Element is not clickable : {ex.__str__()}")
 
     def wait_for_element(self,element):
         """ Wait for the element to be visible """
