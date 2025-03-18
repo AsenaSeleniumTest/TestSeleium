@@ -26,7 +26,7 @@ jobs:
           python -c "open('SeleniumTest/Configurations/__init__.py','a').close()"
 
       - name: test code execution
-        run: pytest SeleniumTest/Tests/test_BasePage.py 
+        run: pytest  
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
           
