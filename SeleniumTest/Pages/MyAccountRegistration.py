@@ -112,7 +112,7 @@ class MyAccountRegistration(MyAccountPage):
     def type_confirm_password(self,confirm_password):
         """
         Type the confirm password """   
-        MyaccountPage.type_text(self,element = self.confirm_password_element,text = confirm_password)    
+        MyAccountPage.type_text(self,element = self.confirm_password_element,text = confirm_password)    
 
     def click_continue_submit(self):
         """
@@ -122,7 +122,7 @@ class MyAccountRegistration(MyAccountPage):
     def register_account(self,gender,first_name,last_name,dob,email,company_name,street,suburb,postcode,city,state,country,telephone,fax,news_letter,password,confirm_password):
         """
         Register the account """
-        MyAccountPage.click_element(self, element=self.gender_element)
+        MyAccountPage.click_element(self, element=self.gender)
         MyAccountPage.type_text(self, element=self.first_name_element, text=first_name)
         MyAccountPage.type_text(self, element=self.last_name_element, text=last_name)
         MyAccountPage.type_text(self, element=self.dob_element, text=dob)
