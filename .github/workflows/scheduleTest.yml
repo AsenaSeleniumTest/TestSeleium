@@ -1,0 +1,21 @@
+on:
+  schedule:
+    - cron: "0 15 * * *"
+  branch_protection_rule: 
+    types: [created,edited,deleted]
+  check_run:
+    types: [created,rerequested,completed,requested_action]
+  issues: 
+    types: [opened,closed,reopened,assigned,locked,unlocked]
+  pull_request:
+    types: [opened,reopened,review_requested]
+    branches: main
+
+jobs:
+  reminder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5.4.0
+      - run: echo "this is running every 15 min"
+    
+  
