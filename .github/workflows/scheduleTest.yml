@@ -9,12 +9,26 @@ on:
     types: [opened,closed,reopened,assigned,locked,unlocked]
   pull_request:
     types: [opened,reopened,review_requested]
-    branches: main
+    branches: 
+      -  main
+      -  test_seleium
 
 jobs:
   reminder:
     runs-on: ubuntu-latest
     steps:
+      - run: actions/checkout@v4.2.2
+      - run: git checkout develop
+      - run: pull origin develop
+      - run: git checkout -b test/test_prerelease
+      - run: git add .
+      - run: git commit -m
+      - run: git push origin test/test_prerelease
+      - name: subir los cambios de pruebas
+      - run: git checkout qa/test_nombre_Test_case
+      - run: git pull origin develop
+      - run: push origin qa/test_nombre_Test_case
+      
       - uses: actions/setup-python@v5.4.0
       - run: echo "this is running every 15 min"
     
