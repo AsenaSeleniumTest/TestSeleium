@@ -18,6 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: actions/checkout@v4.2.2
+      - run: pip install -r requirements.txt
+      - run: python pytest
+      
       - run: git checkout develop
       - run: pull origin develop
       - run: git checkout -b test/test_prerelease
