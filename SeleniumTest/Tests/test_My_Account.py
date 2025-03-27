@@ -5,7 +5,7 @@ from Configurations.TestData import TestData
 from Pages.HomePage import HomePage
 from Pages.MyAccountPage import MyAccountPage
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 
 class Test_my_account:
     """ This class contains the test cases for the my account page """

@@ -1,6 +1,9 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import ElementClickInterceptedException
+from selenium.common.exceptions import ElementNotInteractableException
+from selenium.common.exceptions import NoSuchElementException
 
 class HomePage:
     """ Home page class for the application 
@@ -61,7 +64,7 @@ class HomePage:
             return self.wait.until(EC.visibility_of_element_located(element)).is_displayed()
         except NoSuchElementException as ex:
             print("Element not found")
-            return ex   
+            return False   
     
     
     

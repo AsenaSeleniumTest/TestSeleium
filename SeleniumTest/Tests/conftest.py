@@ -21,6 +21,6 @@ def driver_Setup(request):
         options = webdriver.EdgeOptions()
         driver = webdriver.Edge(service = service,options = options)
         driver.maximize_window()
-        driver.get(HOME_URL)
+        driver.get(HOME_URL) 
             
     return driver
