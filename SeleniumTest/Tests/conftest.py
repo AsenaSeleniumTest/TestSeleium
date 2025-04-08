@@ -24,3 +24,4 @@ def driver_Setup(request):
         driver.get(HOME_URL) 
             
     return driver
+    
